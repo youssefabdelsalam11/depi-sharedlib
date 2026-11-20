@@ -1,7 +1,7 @@
 package edu.depi;
 
 def DockerBulid(IMAGE_NAME , IMAGE_TAG){
-    sh "docker build -t ${IMAGE_NAME}:${IMAGE_TAG}"
+    sh "docker build -t ${IMAGE_NAME}:${IMAGE_TAG} ."
 }
 
 def DockerPush(IMAGE_NAME , IMAGE_TAG){
